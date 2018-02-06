@@ -130,7 +130,11 @@ exports.clean = path => ({
 })
 
 exports.minifyJavaScript = () => ({
-  plugins: [new UglifyJsPlugin()],
+  plugins: [
+    new UglifyJsPlugin({
+      sourceMap: true,
+    }),
+  ],
 })
 
 exports.setFreeVariable = (key, value) => {
