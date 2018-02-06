@@ -1,6 +1,7 @@
 # Simple Webpack Boilerplate
 
 Simple webpack config and production enabled, learned through [webpack-book](https://github.com/survivejs/webpack-book).
+Little tweak for react environment
 
 ## Getting Started
 

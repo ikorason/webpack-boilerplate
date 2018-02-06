@@ -12,7 +12,7 @@ exports.devServer = ({ host, port } = {}) => ({
       errors: true,
       warnings: true,
     },
-    contentBase: path.join(__dirname, '..', 'public'),
+    contentBase: path.join(__dirname, 'public'),
   },
 })
 
