@@ -13,6 +13,7 @@ exports.devServer = ({ host, port } = {}) => ({
       warnings: true,
     },
     contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true,
   },
 })
 
