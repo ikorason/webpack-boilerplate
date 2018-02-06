@@ -20,8 +20,7 @@ const config = merge([
 ])
 
 module.exports = env => {
-  console.log('Development: ', env.development)
+  console.log('Development => ', env.development)
   process.env.BABEL_ENV = env
-  console.log(env)
   return merge(common, config)
 }
