@@ -18,7 +18,6 @@ const config = merge([
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'Undefined Project',
         template: './public/index.html',
       }),
       new webpack.NamedModulesPlugin(),
