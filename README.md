@@ -11,6 +11,16 @@ Clone the repo, and yarn install. After run yarn start:dev, webpack-dev-server w
 _DEV_PORT=3005 // whatever you want
 ```
 
+## Deploy with now.sh
+
+yarn add serve, add script to package.json:
+
+```
+"now-start": "serve --single ./build"
+```
+
+then run now in your project directory, will be using your now account to serve react application
+
 ## Contributing
 
 I am relatively new to webpack, still learning and appreciate feedback and contribution, send all kindz of pull request!
