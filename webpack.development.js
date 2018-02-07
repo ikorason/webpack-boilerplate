@@ -5,16 +5,16 @@ const common = require('./webpack.config')
 const parts = require('./webpack.parts')
 
 const config = merge([
-  parts.devServer({
-    host: process.env.HOST,
-    port: process.env.DEV_PORT,
-  }),
-  parts.loadSASS(),
   {
     output: {
       devtoolModuleFilenameTemplate: 'webpack:///[absolute-resource-path]',
     },
   },
+  parts.devServer({
+    host: process.env.HOST,
+    port: process.env.DEV_PORT,
+  }),
+  parts.loadSASS(),
   parts.loadImages(),
   parts.generateSourceMaps({ type: 'cheap-module-eval-source-map' }),
 ])
