@@ -45,7 +45,7 @@ exports.loadSASS = ({ include, exclude } = {}) => ({
 exports.extractSASS = ({ include, exclude, use }) => {
   const plugin = new ExtractTextPlugin({
     allChunks: true,
-    filename: '[name].[contenthash:8].css',
+    filename: './styles/[name].[contenthash:8].css',
   })
   return {
     module: {
@@ -67,9 +67,6 @@ exports.extractSASS = ({ include, exclude, use }) => {
 
 exports.autoprefix = () => ({
   loader: 'postcss-loader',
-  options: {
-    plugins: () => [require('autoprefixer')()],
-  },
 })
 
 exports.loadJavaScript = ({ include, exclude } = {}) => ({

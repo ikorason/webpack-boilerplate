@@ -29,6 +29,7 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "cssnano": "^3.10.0",
     "dotenv": "^5.0.0",
     "font-awesome": "^4.7.0",
     "react": "^16.2.0",
