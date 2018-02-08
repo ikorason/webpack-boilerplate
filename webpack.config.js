@@ -18,14 +18,17 @@ const config = merge([
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './public/index.html',
+        // template: './public/index.html',
+        template: path.join(__dirname, '/public/index.html'),
       }),
       new webpack.NamedModulesPlugin(),
     ],
   },
   parts.loadFonts({
     options: {
-      name: './fonts/[name].[hash:8].[ext]',
+      name: '[name].[hash:8].[ext]',
+      outputPath: 'fonts/',
+      publicPath: __dirname,
     },
   }),
   parts.loadJavaScript({ include: PATHS.src, exclude: /node_modules/ }),

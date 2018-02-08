@@ -1,4 +1,4 @@
-@import ./utils/variables
+@import variables
 
 body
   position: absolute
@@ -6,21 +6,15 @@ body
   bottom: 0
   left: 0
   right: 0
-  background-color: $bg-color
   display: flex
   justify-content: center
   align-items: center
-
+  overflow: hidden
 
 #root
-  background-image: url('./assets/images/webpack-icon.svg')
-  background-size: cover
-  background-position: center
-  position: absolute
-  width: 15em
-  height: 15em
   h1
     position: relative
     text-align: center
     top: 8em
+    font-size: 5em;
     color: $main-color

@@ -1,5 +1,6 @@
-import App from './components/App'
-import 'react' // testing bundle spliting
-import './index.sass'
+import AppText from './components/AppText'
+import AddImage from './components/AddImage'
+import './styles/index.sass'
 
-document.getElementById('root').appendChild(App('Hello Webpack'))
+document.getElementById('root').appendChild(AppText('Nature'))
+document.getElementById('root').appendChild(AddImage())

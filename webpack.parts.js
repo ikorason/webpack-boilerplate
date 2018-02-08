@@ -86,7 +86,7 @@ exports.loadImages = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif)$/,
         include,
         exclude,
         use: {
@@ -102,7 +102,7 @@ exports.loadFonts = ({ include, exclude, options } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(eot|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
         include,
         exclude,
         use: {
