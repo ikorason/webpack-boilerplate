@@ -31,7 +31,7 @@ const config = merge([
   }),
   parts.loadImages({
     options: {
-      limit: 15000,
+      limit: 25000,
       name: './images/[name].[hash:8].[ext]',
     },
   }),
