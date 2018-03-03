@@ -9,7 +9,3 @@ Clone the repo, and yarn install. After run yarn start:dev, webpack-dev-server w
 ```
 _DEV_PORT=3005 // whatever you want
 ```
-
-## Contributing
-
-I am relatively new to webpack, still learning and appreciate feedback and contribution, send all kindz of pull request!
